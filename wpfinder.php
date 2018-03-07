@@ -3,7 +3,6 @@ $file_to_search = "version.php";
 search_file('.',$file_to_search);
 function search_file($dir,$file_to_search){
     $files = scandir($dir);
-    $cmsdir = 'wp-includes';
     foreach($files as $key => $value){
 
         $path = realpath($dir.DIRECTORY_SEPARATOR.$value);
